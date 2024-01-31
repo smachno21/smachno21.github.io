@@ -108,6 +108,7 @@ footer {
   padding: 10px;
   background-color: white;
   color: #f2f2f2;
+   margin: 10px;
   
 }
 /* Стили для пагинации */
@@ -152,4 +153,15 @@ footer {
     clear: none; /* Очищаем предыдущее значение clear */
   }
 
+}
+
+@media (max-width: 767px) {
+  .pagination .page-link {
+    font-size: 12px; /* Пример уменьшения размера шрифта */
+    padding: 5px 10px; /* Пример уменьшения отступов */
+  }
+
+  .pagination .page-item {
+    margin: 0 2px; /* Уменьшение отступов между элементами */
+  }
 }
