@@ -145,6 +145,8 @@ footer {
   cursor: default;
 }
 /* Дополнительные стили для двух карточек горизонтально при ширине окна больше или равной 1300px */
+
+
 @media (min-width: 1300px) {
   .card {
     width: calc(50% - 40px); /* Учитываем отступы между карточками */
@@ -164,4 +166,101 @@ footer {
   .pagination .page-item {
     margin: 0 2px; /* Уменьшение отступов между элементами */
   }
+}
+
+/* Стили для блока с карточкой */
+.block1 {
+  max-width: 800px;
+  margin-left: 0 auto;
+  padding: 20px;
+
+  text-align: center;
+
+}
+
+/* Стили для заголовка рецепта */
+.block1 h1 {
+  color: #333;
+  font-size: 28px;
+	max-width: 600px;
+}
+
+/* Стили для времени приготовления */
+.vrem {
+  color: #666;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+	
+	max-width: 70px;
+	margin-left: 0 auto;
+	
+}
+
+/* Стили для изображения */
+.cardimg {
+	
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+		border-radius: 10px;
+	box-shadow: 0px 0px 10px gray;
+	margin-bottom: 20px; /* Увеличение отступа снизу */
+}
+
+/* Стили для списка ингредиентов */
+
+.ingr {
+	border: 1px solid #555; /* Обводка без тени */
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+ 
+  max-width: 600px;
+  overflow: hidden;
+	margin: 0 auto;
+	margin-bottom: 20px; /* Увеличение отступа снизу */
+}
+
+.ingr1 {
+  float: left;
+  clear: left;
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.ingr2 {
+  float: right;
+  clear: right;
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+
+
+}
+.ingr ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ingr li {
+  margin-bottom: 10px;
+}
+
+
+/* Стили для инструкции по приготовлению */
+.gotovka1 {
+  padding: 10px; /* Увеличение отступа текста */
+  text-align: left; /* Выравнивание текста по левому краю */
+  margin-top: 30px;
+  border-radius: 10px;
+	line-height: 1.5; /* Увеличение отступа между строками */
+  max-width: 600px;
+  overflow: hidden;
+  margin: 0 auto; /* Центрирование блока */
+margin-bottom: 30px;
+	border: 1px solid #555; /* Обводка без тени */
+	font-size: 18px;
 }
