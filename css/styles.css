@@ -147,30 +147,11 @@ footer {
 /* Дополнительные стили для двух карточек горизонтально при ширине окна больше или равной 1300px */
 
 
-@media (min-width: 1300px) {
-  .card {
-    width: calc(50% - 40px); /* Учитываем отступы между карточками */
-    float: left;
-	margin-left:10px;
-    clear: none; /* Очищаем предыдущее значение clear */
-  }
 
-}
-
-@media (max-width: 767px) {
-  .pagination .page-link {
-    font-size: 12px; /* Пример уменьшения размера шрифта */
-    padding: 5px 10px; /* Пример уменьшения отступов */
-  }
-
-  .pagination .page-item {
-    margin: 0 2px; /* Уменьшение отступов между элементами */
-  }
-}
 
 /* Стили для блока с карточкой */
 .block1 {
-  max-width: 800px;
+  max-width: 1300px;
   margin-left: 0 auto;
   padding: 20px;
 
@@ -263,4 +244,53 @@ footer {
 margin-bottom: 30px;
 	border: 1px solid #555; /* Обводка без тени */
 	font-size: 18px;
+}
+
+
+@media (min-width: 1300px) {
+  .card {
+    width: calc(50% - 40px); /* Учитываем отступы между карточками */
+    float: left;
+	margin-left:10px;
+    clear: none; /* Очищаем предыдущее значение clear */
+  }
+  .block1 {
+	  max-width: 1250px;
+    position: relative; /* Устанавливаем позиционирование для родительского блока */
+  }
+
+  .cardimg {
+    float: left;
+    width: 50%; /* Занимает половину ширины экрана */
+	  max-width: 600px;
+  }
+
+  .ingr {
+    clear: both; /* Очистка обтекания, чтобы разместиться под блоком .cardimg */
+    width: 50%; /* Занимает половину ширины экрана */
+    float: left; /* Располагается слева от блока .gotovka */
+  }
+
+  .gotovka {
+    position: absolute;
+    top: 10;
+    right: 0;
+    width: 50%; /* Занимает половину ширины родительского блока .block1 */
+    height: 100%; /* Занимает 100% высоты родительского блока .block1 */
+    margin-top: 10px; /* Добавляем отступ сверху */
+
+	 
+	 
+  }
+}
+
+@media (max-width: 767px) {
+  .pagination .page-link {
+    font-size: 12px; /* Пример уменьшения размера шрифта */
+    padding: 5px 10px; /* Пример уменьшения отступов */
+  }
+
+  .pagination .page-item {
+    margin: 0 2px; /* Уменьшение отступов между элементами */
+  }
 }
